@@ -1,0 +1,9 @@
+<p>marvel works!</p>
+<div class="card" *ngFor="let post of marvelHeros">
+    <div ng-repeat="(key, value) in searchData | aboutFilter:'Marvel Comics'">
+        <h6>{{post.biography.publisher}}</h6>
+
+    </div>
+    <h6>{{post.name}}</h6>
+
+</div>

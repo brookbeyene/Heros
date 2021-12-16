@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'heros';
+
+  
+  showMarvel: boolean = true;
+  showDc: boolean = true;
+
+  toggleButton(){
+    
+    this.showMarvel = !this.showDc;
+    this.showDc = !this.showMarvel;
+  }
+
 }
